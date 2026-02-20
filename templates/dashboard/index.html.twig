@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block body %}
+<h1>Welcome to Event Management Dashboard</h1>
+<p>Manage your events and venues from here</p>
+
+<h2>Events</h2>
+<p>Create, manage, and track all your events. Set dates, prices, capacity, and more.</p>
+<a href="{{ path('app_event_index') }}">View Events</a>
+<a href="{{ path('app_event_new') }}">+ Add New Event</a>
+
+<h2>Venues</h2>
+<p>Manage your venues with details like name, address, and capacity.</p>
+<a href="{{ path('app_venue_index') }}">View Venues</a>
+<a href="{{ path('app_venue_new') }}">+ Add New Venue</a>
+{% endblock %}
